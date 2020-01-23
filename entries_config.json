@@ -11,7 +11,9 @@
   },
   "category": {
       "url":"/entries?category=_fill_",
-      "value":["Animal", "Business", "Cryptocurrency"]
+      "status": "200",
+      "value":["Animal", "Business", "Cryptocurrency"],
+      "parent": "entries"
   },
   "cors": {
      "url":"/entries?cors=_fill_",
