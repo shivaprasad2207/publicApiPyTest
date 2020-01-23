@@ -1,0 +1,30 @@
+{
+  "base_url": "https://api.publicapis.org",
+  "entries": {
+      "url" : "/entries",
+      "schema": ["API", "Description", "Auth", "HTTPS", "Cors", "Link", "Category"],
+      "status": "200",
+      "fields": {
+                "string": ["API", "Description", "Auth", "Cors", "Link", "Category"],
+                "bool": ["HTTPS"]
+      }
+  },
+  "category": {
+      "url":"/entries?category=_fill_",
+      "value":["Animal", "Business", "Cryptocurrency"]
+  },
+  "cors": {
+     "url":"/entries?cors=_fill_",
+     "value":["yes", "no", "unknown"]
+  },
+  "https": {
+     "url":"/entries?https=",
+     "value":[false, true]
+  },
+  "category_cors": {
+      "url":"/entries?category=_fill_&cors=_fill_",
+      "value":["Animal", "Business", "Cryptocurrency"]
+  }
+
+
+}
