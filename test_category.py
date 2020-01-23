@@ -27,30 +27,30 @@ def execute_api(get_test_conf):
     url = test_conf["base_url"]
     global test_feature
     test_feature = re.match(r"test_(\w+).py", f_file_name).groups()
-    test_url = test_conf[test_feature[0]]['url']
+    feature = test_feature[0]
+    test_url = test_conf[feature]['url']
+    test_values = test_conf[feature]['value']
     f_url = url + test_url
-    log.debug("Url to Test %s", f_url)
-    return requests.get(f_url)
+    return {
+        'url': f_url,
+        'test_values': test_values
+    }
 
 
 def test_api_return_status(execute_api):
     """
     Test the api return status code
     """
-    log = logging.getLogger('test_category::test_api_return_status')
-    ret_val = execute_api.status_code
-    log.debug("Api Ret Value -- %s", ret_val)
-    assert ret_val == 200
+    test_url = execute_api['url']
+    test_values = execute_api['test_values']
+    for value in test_values:
+        url = test_url.replace('_fill_', value)
+        ret = requests.get(url)
+        ret_resp = ret.json()
 
 
 def test_element_count(execute_api):
     """
        Test the api return of count of elements in the response.
     """
-    log = logging.getLogger('test_category::test_element_count')
-    api_response = execute_api.json()
-    api_element_count = api_response['count']
-    log.debug("Api Response element Count --  %s", api_element_count)
-    resp_elements = len(api_response['entries'])
-    assert api_element_count == resp_elements
-
+    pass
