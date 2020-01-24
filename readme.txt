@@ -20,7 +20,7 @@ python -m pytest --html=report_health.html  test_health.py
 
 Execution Flow:
    1. Run any pytest file as shown in usage.
-   2. Dependending on pytest file name, corresponding test config file picked.
+   2. Dependending on pytest file name, corresponding test config file picked from select_test.json file .
    3. According to the pytest file name, corresponding test config informations are picked.
    4. When all the test setup is done, test are executed according to pytest module.     
 
