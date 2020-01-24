@@ -1,6 +1,6 @@
 {
   "entries": {
-        "test_files" : [ "test_entries", "test_category", "t2"  ],
+        "test_files" : [ "test_entries", "test_category", "test_random"  ],
         "test_conf": "entries_config"
   },
   "entries1": {

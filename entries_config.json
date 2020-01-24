@@ -9,6 +9,15 @@
                 "bool": ["HTTPS"]
       }
   },
+  "random": {
+      "url" : "/random",
+      "schema": ["API", "Description", "Auth", "HTTPS", "Cors", "Link", "Category"],
+      "status": "200",
+      "fields": {
+                "string": ["API", "Description", "Auth", "Cors", "Link", "Category"],
+                "bool": ["HTTPS"]
+      }
+  },
   "category": {
       "url":"/entries?category=_fill_",
       "status": "200",
