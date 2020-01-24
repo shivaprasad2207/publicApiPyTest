@@ -19,3 +19,15 @@ development cycle, method and process of development team, so that testing team 
    here we should depend upon reliable test automation.
 
 3. If you would do test automation which techniques or best practices would you use?
+   I would be prefering the Behavior Driven Development(BDD).
+    - As it is provides flexibility to choose the set of test cases on the regression 
+	  cycles especially Agile methodology and in CI/CD enviornment. 
+	- More over BDD is characterised by the use of keywords usage for testing, which is easily 
+	  understood by technical and non-technical persons( like Business Analyst).
+	- Automation testing with keyword Or markers would be best approach as they 
+	  don't require much of modification in the Automation Framework. 
+	  Example : In Python we use Robot Framework Or Pytest.
+    - We should prefer parameterization and use of config files like (json,xml,yaml)
+      which provides flexibility.
+	- Modular development approach for Automation framework would usefull as code reused.
+	
