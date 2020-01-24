@@ -1,0 +1,21 @@
+1. Where would you start? What would be your first steps?  
+
+The testing team should start from very beginning of the development process.
+When all the requirements are from user (customers) are written. 
+Testing team should work in co-ordination with development team and work together
+during the every stage of development. Testing team should know first deliverable milestones,
+development cycle, method and process of development team, so that testing team prioritize its activities, like,   
+
+- Test plan, test cases and test procedures.   
+- Ready with Regression automation bundle. 
+- Ready with machine setup required. 
+- Defect rising, reporting  and  tracking channels.
+
+2. Which process would you establish around testing new functionality? How would you want the features to be tested? 
+   For any new feature sprint testing is used, where in all the functionality and sub-functionality of feature tested.
+   Since the code for the new feature is recently added more testing has to be done as much as. This include manual testing with
+   different cross platform testing. As new code is added, the backward comaptibility of all exisitng functionality to be tested
+   so that they are not affected due new code addtion. As exisitng functionality test might have done earlier cycle,
+   here we should depend upon reliable test automation.
+
+3. If you would do test automation which techniques or best practices would you use?

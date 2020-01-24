@@ -9,6 +9,12 @@ Dependency Modules:
 -logging
 -os
 
+Public Urls Tested:
+https://api.publicapis.org/categories
+https://api.publicapis.org/health
+https://api.publicapis.org/random
+https://api.publicapis.org/entries
+https://api.publicapis.org/entries?category=[PARAMS]
 
 Usage: 
 python -m pytest --html=report_entries.html  test_entries.py
