@@ -4,6 +4,10 @@
       "url" : "/health",
       "status": "200",
       "schema": ["alive"]
+  },
+  "categories": {
+      "url" : "/categories",
+      "status": "200"
   }
-  
+
 }

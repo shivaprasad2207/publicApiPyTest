@@ -4,7 +4,11 @@
         "test_conf": "entries_config"
   },
   "health": {
-        "test_files" : [ "test_health", "t3", "t4"  ],
+        "test_files" : [ "test_health" ],
+        "test_conf": "misc_config"
+  },
+  "categories": {
+        "test_files" : [ "test_categories"  ],
         "test_conf": "misc_config"
   }
 }

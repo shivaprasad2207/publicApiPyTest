@@ -1,5 +1,5 @@
 import pytest
-import test_dispatcher
+import dispatcher
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
@@ -12,4 +12,4 @@ def get_test_conf():
     This setup method creates test dispatch object
     :return: TestDispatcher object
     """
-    return test_dispatcher.TestDispatcher()
+    return dispatcher.TestDispatcher()
