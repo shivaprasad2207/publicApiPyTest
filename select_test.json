@@ -3,8 +3,8 @@
         "test_files" : [ "test_entries", "test_category", "test_random"  ],
         "test_conf": "entries_config"
   },
-  "entries1": {
-        "test_files" : [ "test_entries1", "t3", "t4"  ],
-        "test_conf": "test_config"
+  "health": {
+        "test_files" : [ "test_health", "t3", "t4"  ],
+        "test_conf": "misc_config"
   }
 }

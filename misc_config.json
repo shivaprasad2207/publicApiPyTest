@@ -1,0 +1,9 @@
+{
+  "base_url": "https://api.publicapis.org",
+  "health": {
+      "url" : "/health",
+      "status": "200",
+      "schema": ["alive"]
+  }
+  
+}
